@@ -1,5 +1,6 @@
 /* border: 1px solid red; */
 /* #222A35; */
+/* rgb(2, 37, 65); */
 /* background-color: #222A35; */
 *{
     margin: 0px 0px 0px 0px;
@@ -26,7 +27,7 @@ a {
     justify-content: space-between;
     align-items: center;
 }
-.nav-m-img{
+.nav-m-imgbox{
     border: 1px solid red;
     width: 350px;
     height: 130px;
@@ -34,19 +35,31 @@ a {
     justify-content: center;
     align-items: center;
 }
-.nav-m-menu{
+.nav-m-menubox{
     border: 1px solid red;
+    padding: 0;
     width: 600px;
     height: 130px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 21px;
     font-weight: bold;
 }
-.nav-m-menu > a {
-    color: #222A35;
+.nav-m-menubox > li {
+    border: 1px solid red;
+    width: 25%;
+    font-size: 23px;
+    text-align: center;
+}
+.nav-m-menubox a {
+    color: rgb(2, 37, 65);
+    display: block;
+}
+.nav-m-subbox{
+    display: none;
+    border: 1px solid red;
+    width: 1000px;
+    height: 230px;
+    position: absolute;
+    top: 80px;
 }
