@@ -23,6 +23,7 @@ ul li {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .nav-main{
     /* border: 1px solid red; */
@@ -33,6 +34,7 @@ ul li {
     align-items: center;
     background:white;
     position:absolute;
+    border-bottom: 4px solid rgb(2, 37, 65);
 }
 .nav-m-imgbox{
     /* border: 1px solid red; */
@@ -82,10 +84,14 @@ ul li {
     top: 89px;
     left: 0;
     height: 200px;
-    box-shadow: 1px 1px 1px 1px gray;
+    box-shadow: 0px 2px 0px 0px gray;
+    z-index: 3;
+    background-color: white;
+    border-bottom: 4px solid rgb(2, 37, 65);
 }
 .nav-m-menubox > li:hover > div {
     display: block;
+    
 }
 .submenubox {
     /* border: 1px solid red; */
@@ -94,6 +100,8 @@ ul li {
     align-items: centaer;
     width: 100%;
     height: 100%;
+   
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15), 0 3px 3px rgba(0,0,0,0.15);
 }
 .s-m-b-img{
     /* border: 1px solid red; */
@@ -102,20 +110,107 @@ ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
 }
 .s-m-b-menu{
     /* border: 1px solid red; */
     width: 600px;
     height: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+   
 }
 .s-m-b-menu > ul {
- /* border: 1px solid red; */
-    text-align: center;
-    width: 25%;
-    height: 100%;
+    /* border: 1px solid red; */
+    text-align: left;
+    width: 110px;
+    height: 80%;
     font-weight:300;
-    font-size: 17px;
+    font-size: 15px;
+  
+}
+
+
+
+
+
+.main {
+    /* border: 1px solid red; */
+    width: 100%; 
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.main-fade-slide {
+    /* border: 1px solid red; */
+    width: 1000px; 
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    
+}
+.main-fade-slide h1{
+    font-size: 40px;
+    
+}
+.main-fade-slide h4{
+    font-size: 20px;
+    
+}
+#slide {
+    position:relative;
+    width: 100%; 
+    height: 100%; 
+    overflow:hidden;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+#slide > div {
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%; 
+    height: 100%; 
+   
+}
+#slide-1 {
+    width: 100%;
+    height: 100%;
+    background-image: url("./image/스크린화면2.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+#slide-2 {
+    width: 100%;
+    height: 100%;
+    background-image: url("./image/스크린화면3.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.img-text{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+.img-text-head{
+    padding: 40px 0px 40px 0px;
+    font-size: 40px;
+}
+.img-text-bottom{
+    padding: 40px 0px 40px 0px;
+    font-size: 20px;
 }
