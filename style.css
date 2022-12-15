@@ -152,7 +152,7 @@ ul li {
     justify-content: center;
     align-items: center;
     position: absolute;
-    
+    border-radius: 30px;
 }
 .main-fade-slide h1{
     font-size: 40px;
@@ -187,7 +187,7 @@ ul li {
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
-    
+    border-radius: 2px;
 }
 #slide-2 {
     width: 100%;
@@ -196,7 +196,7 @@ ul li {
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
-    
+    border-radius: 2px;
 }
 .img-text{
     height: 100%;
