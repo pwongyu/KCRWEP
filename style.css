@@ -231,4 +231,12 @@ ul li {
     border: 1px solid red;
     width: 1000px;
     height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.c-l-card{
+    border: 1px solid red;
+    width: 23%;
+    height: 90%;
 }
