@@ -50,20 +50,26 @@ ul li {
     height: 130px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
 .nav-m-menubox a {
     color: #000;
 }
+.nav-m-menubox > li > a {
+    align-items: center;
+    height: 95%;
+}
 .nav-m-menubox > li {
-    /* border: 1px solid red; */
     font-weight: bold;
     font-size: 23px;
     width: 25%;
-    height: 50px;
+    height: 70px;
     display: flex;
     justify-content: center;
-    align-items:flex-end
+    align-items:flex-start
+}
+.nav-m-menubox > li:hover > a{
+    border-bottom: 3px solid rgb(2, 37, 65);;
 }
 /* 라이브러리 */
 .con-min-width{
@@ -78,10 +84,11 @@ ul li {
 }
 /* 서브메뉴박스 */
 .nav-m-menubox > li > div {
+    /* border: 1px solid red; */
     display: none;
     position: absolute;
     width: 100%;
-    top: 89px;
+    top: 130px;
     left: 0;
     height: 200px;
     box-shadow: 0px 2px 0px 0px gray;
@@ -92,7 +99,6 @@ ul li {
 }
 .nav-m-menubox > li:hover > div {
     display: block;
-    
 }
 .submenubox {
     /* border: 1px solid red; */
@@ -220,7 +226,7 @@ ul li {
 
 
 .card-list{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
     height: 300px;
     display: flex;
@@ -228,15 +234,30 @@ ul li {
     align-items: center;
 }
 .c-l-box{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 1000px;
     height: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .c-l-card{
-    border: 1px solid red;
-    width: 23%;
-    height: 90%;
+    border: 1px solid rgb(162, 202, 237); 
+    border-radius: 30px;
+    width: 20%;
+    height: 85%;
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 40%;
+}
+.c-l-card:hover {
+    border: 2px solid rgb(2, 37, 65);
+    background-color: rgba(212, 231, 247, 0.842);
+    cursor: pointer;
+}
+.c-l-card h2 {
+   text-align: center;
+   position: relative;
+   top:70%;
 }
